@@ -166,7 +166,6 @@ public class P2PFSClient implements Runnable {
     public void triggerSearch(SearchRequestDTO searchRequestDto) {
         //search local files
         List<String> searchResults = node.searchLocally(searchRequestDto.getKeyword());
-        //todo:replace spaces with underscore.!!! IMPORTANT !!!!!!
         //pass to neighbors
         if (searchResults.isEmpty()) {
             List<NodeCredentials> nextNodes =

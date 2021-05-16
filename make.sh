@@ -4,7 +4,7 @@
 
 random1=2
 random2=6
-random3=11
+random3=9
 
 echo $random1
 echo $random2
@@ -17,7 +17,7 @@ for i in {1..12}
 	then
   		status="true"
 	else
-		status="true"
+		status="false"
 	fi
 
 	echo "java -jar target/io.viro.p2pfs-1.0-SNAPSHOT.jar 127.0.0.${i} 500${i} node${i} localhost 55555 ${status}"
